@@ -9,6 +9,16 @@
   --gradient-inverted: linear-gradient(231deg, rgba(144 217 224 / 90%) 0%, rgba(84 96 230 / 90%) 100%);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--color-primary);
   font-family: var(--font-montserrat);
@@ -17,4 +27,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
